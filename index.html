@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151717">
+  <meta name="description" content="Uma lista de ideias de presentes de aniversário e Natal, organizada por categorias, com referências para encontrar cada produto.">
+  <title>Lista de presentes · Aniversário & Natal</title>
+  <style>
+    :root{--ink:#171a1a;--ink2:#28302d;--gold:#b9925a;--gold-light:#e5ca9b;--paper:#f5f1e9;--card:#fffdf8;--body:#4f534f;--line:#e6e0d4;--edge:20px}
+    *,*:before,*:after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;font-size:16px;line-height:1.55}
+    button,a{font:inherit}
+    a{color:inherit}
+    a:focus-visible,button:focus-visible{outline:3px solid #b18a4d;outline-offset:4px}
+    .container{width:min(1150px,calc(100% - 44px));margin:auto}
+    .top{background:var(--ink);color:#f5f1e9;position:relative;isolation:isolate;overflow:hidden}
+    .top:before{content:"";position:absolute;inset:-30% -10% auto auto;width:780px;height:700px;z-index:-1;background:radial-gradient(circle at 50% 55%,rgba(174,126,70,.20),transparent 60%);pointer-events:none}
+    .top:after{content:"";position:absolute;width:600px;height:600px;right:-250px;top:-240px;border:1px solid rgba(235,205,150,.12);border-radius:50%;box-shadow:0 0 0 75px rgba(235,205,150,.018),0 0 0 150px rgba(235,205,150,.013);z-index:-1;pointer-events:none}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:26px}
+    .brand{font-family:Georgia,'Times New Roman',serif;color:#f6e6c5;letter-spacing:.08em;font-size:21px;font-weight:bold;display:inline-flex;gap:11px;align-items:center}
+    .brandmark{display:inline-grid;place-items:center;border:1px solid rgba(230,191,129,.65);border-radius:50%;width:37px;height:37px;color:var(--gold-light);font-size:18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(227,199,161,.35);border-radius:999px;padding:8px 14px;color:#ead6b8;font-size:12px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+    .hero{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:40px;align-items:center;padding:80px 0 87px}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:#d7b681;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.23em}
+    .eyebrow:before{content:"";width:28px;height:1px;background:#c69d65}
+    h1,h2,h3,p{margin:0}
+    .hero h1{font:normal clamp(52px,6.3vw,86px)/1.03 Georgia,'Times New Roman',serif;letter-spacing:-.055em;margin:19px 0 21px;max-width:740px}
+    .hero h1 em{color:#d4ae7b;font-weight:normal}
+    .hero p{max-width:535px;color:#c7c9c5;font-size:16px;line-height:1.77}
+    .hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .button{border:0;border-radius:10px;padding:13px 18px;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:14px;font-weight:700;transition:transform .15s ease,background .15s ease}
+    .button:hover{transform:translateY(-2px)}
+    .button.gold{background:#d6b47d;color:#211c15}
+    .button.outline{border:1px solid rgba(232,209,174,.38);color:#eee5d5;background:rgba(255,255,255,.02)}
+    .hero-seal{position:relative;width:320px;height:320px;margin:auto;border:1px solid rgba(216,175,116,.25);border-radius:50%;display:grid;place-items:center}
+    .hero-seal:before{content:"";position:absolute;inset:16px;border:1px dashed rgba(216,175,116,.4);border-radius:50%}
+    .hero-seal:after{content:"✦";position:absolute;top:-16px;left:calc(50% - 13px);font-size:26px;color:#d3b07a;background:#171a1a;padding:0 6px}
+    .seal-inner{text-align:center;display:flex;align-items:center;flex-direction:column;gap:8px}
+    .seal-stars{color:#d6b47d;font-size:32px;letter-spacing:.22em}
+    .seal-number{font:normal 112px/.95 Georgia,serif;letter-spacing:-.09em;color:#f7edd8;padding-right:10px}
+    .seal-label{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#c9ad81;font-weight:700}
+    .seal-sub{font-size:12px;color:#c4c3bd}
+    .anchors-wrap{background:#ede7dc;border-bottom:1px solid #e0d8c9}
+    .anchors{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:15px 0}
+    .anchors .navnote{margin-right:14px;color:#6f6e65;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}
+    .anchors a{display:inline-flex;gap:7px;align-items:center;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #dfd6c5;background:rgba(255,255,255,.65);border-radius:100px;padding:9px 14px;transition:background .15s}
+    .anchors a:hover{background:white}
+    main{padding:28px 0 80px}
+    .section{scroll-margin-top:24px;padding:42px 0 20px}
+    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:22px}
+    .section-kicker{font-size:11px;color:#8d7753;text-transform:uppercase;letter-spacing:.16em;font-weight:800;margin-bottom:8px}
+    h2{font:normal clamp(31px,3.7vw,42px)/1.14 Georgia,'Times New Roman',serif;letter-spacing:-.035em}
+    .section-index{color:#8f897e;font-size:13px;white-space:nowrap;padding-bottom:5px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+    .gift{border:1px solid #e7e0d4;border-radius:18px;overflow:hidden;background:var(--card);box-shadow:0 9px 30px rgba(34,28,18,.035);display:grid;grid-template-columns:200px minmax(0,1fr);min-height:241px;transition:transform .2s,box-shadow .2s}
+    .gift:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(34,28,18,.075)}
+    .art{position:relative;display:grid;place-items:center;isolation:isolate;overflow:hidden;min-height:240px}
+    .art:after{content:"";position:absolute;z-index:-1;width:185px;height:185px;border-radius:50%;border:1px solid rgba(63,63,62,.09);box-shadow:0 0 0 31px rgba(255,255,255,.08),0 0 0 62px rgba(255,255,255,.065);top:50%;left:50%;transform:translate(-50%,-50%)}
+    .art.sleep{background:linear-gradient(150deg,#e6dfd0,#d2c5b0)}
+    .art.soap{background:linear-gradient(150deg,#e6d9ca,#e4bdab)}
+    .art.fit{background:linear-gradient(150deg,#cfd6cf,#acbdb0)}
+    .art.book{background:linear-gradient(150deg,#d5d0df,#b4a9c7)}
+    .art.book.alt{background:linear-gradient(150deg,#e9d1bc,#c9a98b)}
+    .art.book.fantasy{background:linear-gradient(150deg,#c2d4d1,#99b1ad)}
+    .art.pajama{background:linear-gradient(150deg,#d3c6d0,#bfb4c6)}
+    .art.ai{background:linear-gradient(150deg,#ddd8cb,#bfb09a)}
+    .art svg{max-width:170px;width:82%;height:auto;filter:drop-shadow(0 18px 10px rgba(53,40,31,.11))}
+    .gift-body{padding:22px 20px 18px;display:flex;flex-direction:column;align-items:flex-start}
+    .gift-num{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#968566;font-weight:800;margin-bottom:9px}
+    h3{font:normal 22px/1.2 Georgia,'Times New Roman',serif;letter-spacing:-.03em;color:#292b28}
+    .desc{font-size:13px;line-height:1.6;color:#696962;margin:11px 0 13px}
+    .tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+    .tag{font-size:10px;font-weight:800;letter-spacing:.02em;background:#f2ede3;color:#7d6544;border-radius:6px;padding:6px 9px}
+    .gift-links{display:flex;align-items:center;flex-wrap:wrap;gap:13px;margin-top:auto}
+    .shoplink{font-size:12px;font-weight:800;text-underline-offset:4px;text-decoration-thickness:1px;color:#77542c}
+    .copy{background:transparent;border:0;padding:5px 0;color:#74756f;font-size:12px;cursor:pointer}
+    .copy:hover{text-decoration:underline}
+    .bottom{border-top:1px solid #e4dbcc;padding:27px 0 42px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;color:#75746c;font-size:12px}
+    .footer-brand{font:normal 21px Georgia,serif;color:#8c734a}
+    .note{padding:18px 21px;margin-top:27px;border-left:3px solid #b99a68;background:#eae3d7;color:#615f58;font-size:13px;line-height:1.7;border-radius:0 9px 9px 0}
+    .toast{position:fixed;z-index:8;left:50%;bottom:23px;transform:translate(-50%,90px);background:#212624;color:white;border-radius:12px;box-shadow:0 12px 45px #0003;padding:13px 22px;font-size:13px;opacity:0;pointer-events:none;transition:.2s}
+    .toast.on{opacity:1;transform:translate(-50%,0)}
+    @media(min-width:990px){.grid .gift:only-child{grid-column:auto}}
+    @media(max-width:1050px){.gift{grid-template-columns:148px 1fr}.art{min-height:230px}.gift-body{padding:19px 17px}.art svg{width:88%}}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:59px 0 63px}.hero-seal{display:none}.grid{grid-template-columns:1fr}.gift{grid-template-columns:190px 1fr}.top .pill{display:none}}
+    @media(max-width:530px){.container{width:min(100% - 32px,1150px)}.brand{font-size:17px}.brandmark{width:33px;height:33px}.hero h1{font-size:50px;line-height:1.07}.hero p{font-size:14px}.hero-actions{margin-top:26px}.button{width:100%}.anchors{gap:8px}.anchors .navnote{width:100%;margin:0 0 2px}.anchors a{padding:8px 12px;font-size:12px}.section{padding-top:36px}.section-index{font-size:11px}.grid{gap:13px}.gift{grid-template-columns:116px 1fr;min-height:208px;border-radius:14px}.art{min-height:208px}.art svg{width:100%;max-width:130px}.gift-body{padding:15px 12px}.gift-num{font-size:9px;margin-bottom:6px}h3{font-size:19px}.desc{font-size:12px;margin:7px 0 10px;line-height:1.4}.tag{padding:4px 6px;font-size:9px}.tags{margin-bottom:7px}.gift-links{gap:10px}.shoplink,.copy{font-size:11px}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+    @media print{.top{background:#fff;color:#111}.hero{padding:35px 0}.hero h1,.eyebrow{color:#111}.hero p{color:#444}.hero-seal,.hero-actions,.anchors-wrap,.copy{display:none!important}main{padding:10px 0}.section{break-inside:avoid;padding-top:22px}.gift{break-inside:avoid}.gift-links a:after{content:" (" attr(href) ")";font-weight:400;font-size:8px}.bottom{padding:12px}}
+  </style>
+</head>
+<body>
+  <header class="top" id="inicio">
+    <div class="container">
+      <div class="nav">
+        <div class="brand"><span class="brandmark">✦</span> MINHA WISHLIST</div>
+        <div class="pill">✧ Aniversário & Natal</div>
+      </div>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Uma lista feita com carinho</div>
+          <h1>Ideias para <em>me presentear.</em></h1>
+          <p>Reuni algumas coisas que eu adoraria ganhar — desde pequenos mimos até presentes mais especiais. Os links são referências: fique à vontade para comprar onde preferir.</p>
+          <p style="margin-top:14px">Nada aqui é obrigatório! São só sugestões para ajudar quem estiver em dúvida. Se você tiver outra ideia ou quiser me presentear com algo diferente, vou adorar do mesmo jeito. ♡</p>
+          <div class="hero-actions">
+            <a href="#travesseiros" class="button gold">Explorar os presentes <span aria-hidden="true">↘</span></a>
+            <button type="button" class="button outline" id="share">Compartilhar a lista <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <div class="hero-seal" aria-hidden="true"><div class="seal-inner"><div class="seal-stars">✧ ✦ ✧</div><div class="seal-number">11</div><div class="seal-label">ideias de presentes</div><div class="seal-sub">escolhidas com carinho</div></div></div>
+      </div>
+    </div>
+  </header>
+  <nav class="anchors-wrap" aria-label="Categorias de presentes">
+    <div class="container anchors">
+      <span class="navnote">Explorar por categoria</span>
+      <a href="#travesseiros">☾ Travesseiros</a>
+      <a href="#sabonetes">✿ Sabonetes</a>
+      <a href="#academia">↝ Academia</a>
+      <a href="#livros">♧ Livros</a>
+      <a href="#pijamas">♡ Pijamas</a>
+      <a href="#assinaturas-ia">✧ Assinaturas de IA</a>
+    </div>
+  </nav>
+  <main class="container">
+    <section class="section" id="travesseiros" aria-labelledby="titulo-travesseiros">
+      <div class="section-heading"><div><div class="section-kicker">01 — Conforto e descanso</div><h2 id="titulo-travesseiros">Travesseiros</h2></div><div class="section-index">02 opções</div></div>
+      <div class="grid">
+        <article class="gift">
+          <div class="art sleep" aria-hidden="true"><svg viewBox="0 0 200 200"><g transform="rotate(-10 100 100)"><rect x="32" y="52" width="140" height="103" rx="32" fill="#f8f5ed" stroke="#baa889" stroke-width="2"/><rect x="46" y="65" width="112" height="77" rx="25" fill="none" stroke="#d7c9b3" stroke-width="2" stroke-dasharray="3 4"/><path d="M73 98Q100 86 128 100" stroke="#ddd1be" stroke-width="3" fill="none" stroke-linecap="round"/></g><path d="M52 38l7-17 7 17 17 7-17 7-7 17-7-17-17-7z" fill="#b99561" opacity=".7"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 01 · Duoflex</div><h3>Natural Látex Cervical</h3><p class="desc">Travesseiro anatômico em látex natural, com apoio para o pescoço.</p><div class="tags"><span class="tag">Látex natural</span><span class="tag">Cervical</span></div><div class="gift-links"><a class="shoplink" href="https://www.amazon.com.br/Travesseiro-Natural-Duoflex-Branco-50cmx70cm/dp/B07J2P6NXG" target="_blank" rel="noopener noreferrer">Ver na Amazon ↗</a><button type="button" class="copy" data-copy="Duoflex Natural Látex Cervical">Copiar nome</button></div></div>
+        </article>
+        <article class="gift">
+          <div class="art sleep" aria-hidden="true"><svg viewBox="0 0 200 200"><g transform="rotate(9 100 100)"><path d="M28 90Q25 55 59 52H142Q176 52 172 89V123Q169 150 140 148H58Q29 148 28 121Z" fill="#faf8f3" stroke="#bdaa8e" stroke-width="2"/><path d="M32 91Q58 74 81 92Q101 102 121 91Q154 70 171 92" stroke="#d9cbb6" stroke-width="3" fill="none"/><path d="M57 125Q100 135 146 124" stroke="#e2d8c9" stroke-width="2" fill="none"/></g><circle cx="149" cy="36" r="7" fill="#b99561" opacity=".7"/><circle cx="162" cy="25" r="3" fill="#b99561" opacity=".6"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 02 · Ortobom</div><h3>Anatomic Visco</h3><p class="desc">Travesseiro cervical de espuma viscoelástica, com formato anatômico.</p><div class="tags"><span class="tag">Viscoelástico</span><span class="tag">Cervical</span></div><div class="gift-links"><a class="shoplink" href="https://www.mercadolivre.com.br/travesseiro-nasa-anatomico-ortobom-de-suporte-cervical/up/MLBU1362205554?pdp_filters=item_id%3AMLB2834342539" target="_blank" rel="noopener noreferrer">Ver no Mercado Livre ↗</a><button type="button" class="copy" data-copy="Ortobom Anatomic Visco">Copiar nome</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="sabonetes" aria-labelledby="titulo-sabonetes">
+      <div class="section-heading"><div><div class="section-kicker">02 — Autocuidado</div><h2 id="titulo-sabonetes">Sabonetes</h2></div><div class="section-index">02 opções</div></div>
+      <div class="grid">
+        <article class="gift">
+          <div class="art soap" aria-hidden="true"><svg viewBox="0 0 200 200"><g transform="rotate(-11 95 101)"><rect x="32" y="72" width="140" height="89" rx="13" fill="#b98271"/><rect x="38" y="78" width="128" height="77" rx="10" fill="#d59c85"/><rect x="80" y="79" width="48" height="76" fill="#f0ccaa"/><text x="104" y="105" text-anchor="middle" font-size="10" fill="#8d5949" font-family="Georgia">natura</text><text x="104" y="118" text-anchor="middle" font-size="8" fill="#8d5949" font-family="Georgia">tododia</text><path d="M48 130Q57 104 75 101" stroke="#f9dcc7" stroke-width="2" fill="none"/></g><circle cx="157" cy="55" r="13" stroke="#fff6e8" stroke-width="3" fill="none"/><circle cx="174" cy="35" r="6" stroke="#fff6e8" stroke-width="2" fill="none"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 01 · Natura</div><h3>Tododia · Caixa com 5</h3><p class="desc">Kit com 5 sabonetes vegetais em barra. Qualquer fragrância está valendo!</p><div class="tags"><span class="tag">5 unidades</span><span class="tag">Fragrância livre</span></div><div class="gift-links"><a class="shoplink" href="https://www.natura.com.br/p/sabonete-em-barra-puro-vegetal-sortidos-tododia/NATBRA-114464" target="_blank" rel="noopener noreferrer">Ver na Natura ↗</a><button type="button" class="copy" data-copy="Natura Tododia — caixa com 5 sabonetes (qualquer fragrância)">Copiar nome</button></div></div>
+        </article>
+        <article class="gift">
+          <div class="art soap" aria-hidden="true"><svg viewBox="0 0 200 200"><g transform="rotate(8 105 105)"><rect x="30" y="67" width="145" height="95" rx="12" fill="#8d8b6e"/><rect x="38" y="75" width="129" height="79" rx="8" fill="#aeb08e"/><path d="M96 76V154" stroke="#f0d3a7" stroke-width="27"/><text x="96" y="104" text-anchor="middle" font-size="11" fill="#6d6649" font-family="Georgia">natura</text><text x="96" y="119" text-anchor="middle" font-size="13" font-style="italic" fill="#6d6649" font-family="Georgia">ekos</text><path d="M52 135Q74 101 74 86M52 135Q66 115 83 113" stroke="#e5e8cf" stroke-width="2" fill="none"/></g><path d="M40 33c14 7 15 18 8 30-15-6-20-19-8-30z" fill="#788569"/><path d="M48 64q12-17 26-18" stroke="#788569" fill="none" stroke-width="3"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 02 · Natura</div><h3>Ekos · Caixa com 4</h3><p class="desc">Kit de 4 sabonetes em barra, cremosos e esfoliantes, com fragrâncias variadas.</p><div class="tags"><span class="tag">4 unidades</span><span class="tag">Cremoso e esfoliante</span></div><div class="gift-links"><a class="shoplink" href="https://www.natura.com.br/p/sabonete-em-barra-puro-vegetal-cremoso-e-esfoliante-ekos-4-un-de-100-g/NATBRA-134574" target="_blank" rel="noopener noreferrer">Ver na Natura ↗</a><button type="button" class="copy" data-copy="Natura Ekos — caixa com 4 sabonetes cremosos e esfoliantes">Copiar nome</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="academia" aria-labelledby="titulo-academia">
+      <div class="section-heading"><div><div class="section-kicker">03 — Movimento</div><h2 id="titulo-academia">Academia</h2></div><div class="section-index">02 opções</div></div>
+      <div class="grid">
+        <article class="gift">
+          <div class="art fit" aria-hidden="true"><svg viewBox="0 0 200 200"><g transform="rotate(-18 100 100)"><rect x="35" y="54" width="130" height="34" rx="16" fill="#344e48"/><rect x="35" y="58" width="130" height="28" rx="14" fill="none" stroke="#668278" stroke-width="3" stroke-dasharray="7 4"/><rect x="31" y="89" width="138" height="35" rx="16" fill="#859d8c"/><rect x="37" y="93" width="126" height="27" rx="13" fill="none" stroke="#d4dcd3" stroke-width="3" stroke-dasharray="7 4"/><rect x="27" y="125" width="146" height="34" rx="16" fill="#c0a27d"/><rect x="33" y="129" width="134" height="26" rx="13" fill="none" stroke="#efdbbc" stroke-width="3" stroke-dasharray="7 4"/></g></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 01 · D1Fitness</div><h3>Kit 3 minibands de tecido</h3><p class="desc">Conjunto com três faixas de diferentes resistências. Importante: <strong>de tecido</strong>, não aquelas fininhas de plástico.</p><div class="tags"><span class="tag">3 intensidades</span><span class="tag">Tecido</span></div><div class="gift-links"><a class="shoplink" href="https://www.mercadolivre.com.br/kit-hip-mini-band-tecido-faixa-elastica-3-intensidades/p/MLB42163894" target="_blank" rel="noopener noreferrer">Mercado Livre ↗</a><button type="button" class="copy" data-copy="D1Fitness — kit de 3 minibands de tecido">Copiar nome</button></div></div>
+        </article>
+        <article class="gift">
+          <div class="art fit" aria-hidden="true"><svg viewBox="0 0 200 200"><ellipse cx="101" cy="169" rx="65" ry="9" fill="#6a7a71" opacity=".2"/><g transform="rotate(-8 101 100)"><path d="M55 47h96l8 107q1 14-13 15H60q-14-1-13-15z" fill="#f7f5e8" stroke="#d2d0bd" stroke-width="3"/><path d="M55 48h96l-2 17H57z" fill="#48584a"/><path d="M48 83h110v61H48z" fill="#3d524d"/><path d="M48 84h111" stroke="#8ca69a" stroke-width="2"/><text x="104" y="110" text-anchor="middle" font-size="12" font-weight="bold" letter-spacing="1" fill="#fbf8ea">ISOLATE</text><text x="104" y="122" text-anchor="middle" font-size="8" letter-spacing="2" fill="#f2cb8f">JUICE</text><circle cx="104" cy="141" r="19" fill="#efa84e"/><path d="M90 140q15-23 28 0q-13 15-28 0z" fill="#ffd37c"/></g><path d="M157 31l4-12 4 12 12 4-12 4-4 12-4-12-12-4z" fill="#b99561"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 02 · Adaptogen</div><h3>Isolate Juice · Manga e Laranja</h3><p class="desc">Suplemento de proteína isolada e hidrolisada de origem bovina, com sabor de manga e laranja. Embalagem de 900 g.</p><div class="tags"><span class="tag">900 g</span><span class="tag">Manga e laranja</span></div><div class="gift-links"><a class="shoplink" href="https://www.mercadolivre.com.br/whey-protein-isolado-adaptogen-isolate-juice-900g-manga-lara/up/MLBU4337731567?pdp_filters=item_id%3AMLB7195311340" target="_blank" rel="noopener noreferrer">Ver no Mercado Livre ↗</a><button type="button" class="copy" data-copy="Adaptogen Isolate Juice — manga e laranja, 900 g">Copiar nome</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="livros" aria-labelledby="titulo-livros">
+      <div class="section-heading"><div><div class="section-kicker">04 — Histórias e fantasia</div><h2 id="titulo-livros">Livros</h2></div><div class="section-index">03 opções</div></div>
+      <div class="grid">
+        <article class="gift">
+          <div class="art book" aria-hidden="true"><svg viewBox="0 0 200 200"><ellipse cx="101" cy="171" rx="65" ry="10" fill="#57483f" opacity=".12"/><g transform="rotate(-8 102 104)"><rect x="47" y="28" width="106" height="144" rx="4" fill="#283e4d" stroke="#d7b87c" stroke-width="1.5"/><path d="M57 28v144" stroke="#d7b87c" stroke-width="3" opacity=".8"/><path d="M67 44h72v106H67z" stroke="#d7b87c" stroke-width="1" opacity=".65" fill="none"/><path d="M85 67l15-23 15 23-15 22z" stroke="#d7b87c" stroke-width="1" fill="none" opacity=".75"/><text x="102" y="111" text-anchor="middle" font-family="Georgia" font-weight="bold" font-size="10" letter-spacing=".3" fill="#d7b87c">THE INHERITANCE</text><text x="102" y="127" text-anchor="middle" font-family="Georgia" font-weight="bold" font-size="13" fill="#d7b87c">GAMES</text><text x="102" y="156" text-anchor="middle" font-size="7" letter-spacing=".5" fill="#d7b87c">4 BOOKS</text></g><circle cx="159" cy="32" r="4" fill="#f5ddab" opacity=".9"/><path d="M171 35l5-10 5 10 10 5-10 5-5 10-5-10-10-5z" fill="#d9ad70" opacity=".7"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 01 · Jennifer Lynn Barnes</div><h3>The Inheritance Games · Box com 4 livros</h3><p class="desc">Coleção paperback em inglês com os quatro livros da série The Inheritance Games, incluindo The Brothers Hawthorne.</p><div class="tags"><span class="tag">4 livros</span><span class="tag">Em inglês</span></div><div class="gift-links"><a class="shoplink" href="https://www.amazon.com.br/Inheritance-Games-Paperback-Collection-1-4/dp/0316581712" target="_blank" rel="noopener noreferrer">Ver na Amazon ↗</a><button type="button" class="copy" data-copy="The Inheritance Games Paperback Collection (4 livros) — Jennifer Lynn Barnes">Copiar nome</button></div></div>
+        </article>
+        <article class="gift">
+          <div class="art book alt" aria-hidden="true"><svg viewBox="0 0 200 200"><ellipse cx="101" cy="171" rx="65" ry="10" fill="#57483f" opacity=".12"/><g transform="rotate(-8 102 104)"><rect x="47" y="28" width="106" height="144" rx="4" fill="#763d4a" stroke="#f8d6a9" stroke-width="1.5"/><path d="M57 28v144" stroke="#f8d6a9" stroke-width="3" opacity=".8"/><path d="M67 44h72v106H67z" stroke="#f8d6a9" stroke-width="1" opacity=".65" fill="none"/><path d="M85 67l15-23 15 23-15 22z" stroke="#f8d6a9" stroke-width="1" fill="none" opacity=".75"/><text x="102" y="111" text-anchor="middle" font-family="Georgia" font-weight="bold" font-size="10" letter-spacing=".3" fill="#f8d6a9">ONCE UPON A</text><text x="102" y="127" text-anchor="middle" font-family="Georgia" font-weight="bold" font-size="9" fill="#f8d6a9">BROKEN HEART</text><text x="102" y="156" text-anchor="middle" font-size="7" letter-spacing=".5" fill="#f8d6a9">3 BOOKS</text></g><circle cx="159" cy="32" r="4" fill="#f5ddab" opacity=".9"/><path d="M171 35l5-10 5 10 10 5-10 5-5 10-5-10-10-5z" fill="#d9ad70" opacity=".7"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 02 · Stephanie Garber</div><h3>Once Upon a Broken Heart · Box capa dura</h3><p class="desc">Box da trilogia Once Upon a Broken Heart, em inglês, com os três volumes em capa dura.</p><div class="tags"><span class="tag">3 livros</span><span class="tag">Capa dura · Inglês</span></div><div class="gift-links"><a class="shoplink" href="https://www.amazon.com.br/dp/125089834X" target="_blank" rel="noopener noreferrer">Ver na Amazon ↗</a><button type="button" class="copy" data-copy="Once Upon a Broken Heart — box capa dura (3 livros), Stephanie Garber">Copiar nome</button></div></div>
+        </article>
+        <article class="gift">
+          <div class="art book fantasy" aria-hidden="true"><svg viewBox="0 0 200 200"><ellipse cx="101" cy="171" rx="65" ry="10" fill="#57483f" opacity=".12"/><g transform="rotate(-8 102 104)"><rect x="47" y="28" width="106" height="144" rx="4" fill="#294e4b" stroke="#ead0a5" stroke-width="1.5"/><path d="M57 28v144" stroke="#ead0a5" stroke-width="3" opacity=".8"/><path d="M67 44h72v106H67z" stroke="#ead0a5" stroke-width="1" opacity=".65" fill="none"/><path d="M85 67l15-23 15 23-15 22z" stroke="#ead0a5" stroke-width="1" fill="none" opacity=".75"/><text x="102" y="111" text-anchor="middle" font-family="Georgia" font-weight="bold" font-size="13" letter-spacing=".3" fill="#ead0a5">O NOME</text><text x="102" y="127" text-anchor="middle" font-family="Georgia" font-weight="bold" font-size="13" fill="#ead0a5">DO VENTO</text><text x="102" y="156" text-anchor="middle" font-size="7" letter-spacing=".5" fill="#ead0a5">EDIÇÃO DE LUXO</text></g><circle cx="159" cy="32" r="4" fill="#f5ddab" opacity=".9"/><path d="M171 35l5-10 5 10 10 5-10 5-5 10-5-10-10-5z" fill="#d9ad70" opacity=".7"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 03 · Patrick Rothfuss</div><h3>O Nome do Vento · Edição de luxo</h3><p class="desc">Edição de luxo em português do primeiro livro de A Crônica do Matador do Rei, com material extra.</p><div class="tags"><span class="tag">Edição de luxo</span><span class="tag">Português</span></div><div class="gift-links"><a class="shoplink" href="https://www.amazon.com.br/nome-vento-Edi%C3%A7%C3%A3o-Cr%C3%B4nica-Matador/dp/6555651857" target="_blank" rel="noopener noreferrer">Ver na Amazon ↗</a><button type="button" class="copy" data-copy="O Nome do Vento — edição de luxo (Patrick Rothfuss)">Copiar nome</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="pijamas" aria-labelledby="titulo-pijamas">
+      <div class="section-heading"><div><div class="section-kicker">05 — Noites aconchegantes</div><h2 id="titulo-pijamas">Pijamas</h2></div><div class="section-index">01 opção</div></div>
+      <div class="grid">
+        <article class="gift">
+          <div class="art pajama" aria-hidden="true"><svg viewBox="0 0 200 200"><path d="M76 37 54 45 18 118l29 18 21-53 1 67h68l2-67 21 53 28-18-36-73-23-8q-24 19-51 0z" fill="#3b424b" stroke="#66707c" stroke-width="2"/><path d="M77 38q25 24 49 0M102 58v87" stroke="#bcab89" stroke-width="2.5" fill="none"/><circle cx="107" cy="79" r="2.5" fill="#bcab89"/><circle cx="107" cy="95" r="2.5" fill="#bcab89"/><circle cx="107" cy="111" r="2.5" fill="#bcab89"/><path d="M72 154h61v11l-6 24h-22l-5-22-4 22H76l-5-24z" fill="#414956"/><path d="M68 84l-17 20M139 83l17 20" stroke="#bdaa86" stroke-width="2" fill="none"/></svg></div>
+          <div class="gift-body"><div class="gift-num">Opção 01 · Conforto</div><h3>Pijama de manga longa</h3><p class="desc">Um pijama confortável de manga comprida. Modelo e cor ficam à escolha de quem presentear.</p><div class="tags"><span class="tag">Tamanho GG ou EG</span><span class="tag">Manga longa</span></div><div class="gift-links"><button type="button" class="copy" data-copy="Pijama de manga longa — tamanho GG ou EG">Copiar nome</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="assinaturas-ia" aria-labelledby="titulo-assinaturas-ia">
+      <div class="section-heading"><div><div class="section-kicker">06 — Criatividade e tecnologia</div><h2 id="titulo-assinaturas-ia">Assinaturas de IA</h2></div><div class="section-index">01 opção</div></div>
+      <div class="grid">
+        <article class="gift">
+          <div class="art ai" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <ellipse cx="100" cy="168" rx="60" ry="10" fill="#645641" opacity=".13"/>
+              <rect x="48" y="46" width="104" height="104" rx="24" fill="#323c3d" stroke="#a58b61" stroke-width="3"/>
+              <rect x="62" y="60" width="76" height="76" rx="15" fill="none" stroke="#b79b6f" stroke-width="2" opacity=".8"/>
+              <path d="M101 72l8 21 21 8-21 8-8 21-8-21-21-8 21-8z" fill="#e9d1a5"/>
+              <g stroke="#8b7150" stroke-width="4" stroke-linecap="round">
+                <path d="M74 37v9M99 37v9M125 37v9M74 150v12M99 150v12M125 150v12M37 74h11M37 100h11M37 125h11M152 74h11M152 100h11M152 125h11"/>
+              </g>
+              <path d="M156 29l4-9 4 9 9 4-9 4-4 9-4-9-9-4z" fill="#d1a669"/>
+            </svg>
+          </div>
+          <div class="gift-body">
+            <div class="gift-num">Opção 01 · ChatGPT ou Claude</div>
+            <h3>Uma ajudinha com minhas IAs ♡</h3>
+            <p class="desc">Uma contribuição via Pix para ajudar a pagar a assinatura do ChatGPT ou do Claude. <strong>Qualquer valor é bem-vindo</strong> — não precisa cobrir uma mensalidade inteira!</p>
+            <div class="tags"><span class="tag">Pix</span><span class="tag">Valor livre</span></div>
+            <div style="margin:16px 0;text-align:center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcgAAAHIAQAAAADi2kdHAAAEEUlEQVR4nO1c7W7kMAicOe37v/LcDwbwVteu1I9LXOO22yb1KEbIGAYIhU+OP58FDnKQgxzkIAe5PfIBAIy/BQoARV9BBBTXy3/iYi85T0E+AIR+wPiRKEKgZAVSAK30mrmZnKcgQ59gaEoA6T+WuxRjv/a93eQ8E2m10eqU6J0psBT5zc8c5HciH2+uU4coE6vlfP2eZw7yx5GS/Z2wqoovhS59k8vMa1c7yHdH7E/2Daq8WNtdiooz1Ir96jMH+XNIPhtRLkY13Foo4hRRz5P3kvMUpCPOUhkQSsytKC4xiqhW6V5ynoLMeEV2fERI1rCNr8OV1GQqeC85j0IK3qAAANI+kSMXKo1wMkXDJ9wcSes0dmFolhWqMPk/QTHx2tUO8hVSBEnIPmyeqRDa1829mszfjnL+fqT5+OD4+ncyCUqS3pRuz95MzlOQRe31mRlG1/uzfN10gcvj3UvOU5CZL6NNa+vX6pRjloxelJ7uXnIehVQyeyBo9ycTLuHt1jEq0hcbynkAsikEH5HIj7yfx2rOsfu7mZxnIVmhiRadLlomacpBGn/oxsjanzJdm2Fo7ka41CQCUNZu3UzOU5BsZSGLhOq7KoeqQKFm7ybnKUjzt9ZV2NSsKzFXFIyuYlqzf3vJeQryuR6sfZ/Id6JtLzylygD3kvMU5ANwwZdQkQra0GbWJQxt157sJudZyI5HBEahZp6UYW2Lv73Dagf5/gh+KA/HPDvL1QXTF6rU9uQ/74zM+iGxtx5N62VJgk9MPm3PzeQ8CykRkER7r5JZoK4vSbc2mcEt5fz9yKXE65nlq84V97GIzclP/HlbZOkzq/lY6RQb2g5XsiVp4s/7In1+LkXxVS3U2VDzRR3GXLXaQb4azn82yee8p5IgooJYQPUpDR9/Y+TC9zU1n0yflvtcvKPhh26LNN+30EGsTlCgWlqidiG7Qi9b7SBfjTo/K3uS+hIyeiFAkcXcjr29L3KtT0i9Vr1QBihLQW5rdS85T0FWf1no0QcngCL/xI5hVkZ+LznPQmaZrYC0skHMZyMo137Qq1c7yFfIrFJAxCeLcUUU/NnTJSjnW7aU8/cj630Y8tmYnmwZXSXP4G7B3KB7yXkUMhNhdmJNGrA7kbJSAVHmd+1qB/nBiPoExGcmP1mnKeldGU0tUcMw9dQ3RzKGba6ZPi69LMXr0mnvK1c7yA/GUz1Y0bQstrZa8ZfazetWO8hX4+n9YNUxGGFoV+Rmv29WLAyfsAUyLG7kxVjJa8hFCVGxkAm1y1c7yH+Mp/eDVSdSpjzBjEfN2zrBPfvzrsjKlwFY2dyqsCaV7q9Dli8/c5A/jQz3NjtA6c9MmSEiUaqN7aWrHeT74837wf7LMwc5yEEOcpCD3B35FxNrEtc5+dNaAAAAAElFTkSuQmCC" alt="QR Code Pix para contribuição de valor livre" width="190" height="190" style="width:190px;max-width:100%;height:auto;padding:8px;background:white;border-radius:12px;border:1px solid #e6e0d4"><p class="desc" style="margin:6px 0 0">Escaneie com o aplicativo do banco ou copie o código Pix abaixo.</p></div><div class="gift-links"><button type="button" class="copy" data-copy="00020126580014BR.GOV.BCB.PIX01365ef8895b-0345-42c5-bc86-9a5c8b5f638a5204000053039865802BR5925Jessica Azambuja Moroszcz6009SAO PAULO62140510cRxtLBDsyR63047550" aria-label="Copiar código Pix copia e cola">Copiar código Pix</button><a class="shoplink" href="https://nubank.com.br/cobrar/40owd/6ae0028f-4e18-40ae-92f6-4f249da1377d" target="_blank" rel="noopener noreferrer">Abrir no Nubank ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="note"><strong>Uma observação:</strong> os itens da mesma categoria podem ser alternativas entre si. Os links servem como referência e não é preciso comprar na loja indicada. Preços e estoques podem mudar. 💛</div>
+  </main>
+  <footer class="container bottom"><span class="footer-brand">✦ Obrigada pelo carinho!</span><span>Aniversário & Natal · Minha lista de desejos</span></footer>
+  <div role="status" aria-live="polite" id="toast" class="toast"></div>
+  <script>
+    const plainText = `🎁 LISTA DE PRESENTES — ANIVERSÁRIO & NATAL\n\n🛏️ TRAVESSEIROS\n• Duoflex Natural Látex Cervical\n• Ortobom Anatomic Visco\n\n🧼 SABONETES\n• Natura Tododia — caixa com 5 (qualquer fragrância)\n• Natura Ekos — caixa com 4 (cremosos e esfoliantes)\n\n🏋️ ACADEMIA\n• D1Fitness — kit com 3 minibands de TECIDO\n• Adaptogen Isolate Juice — manga e laranja, 900 g\n\n📚 LIVROS\n• The Inheritance Games — box paperback com 4 livros (em inglês)\n• Once Upon a Broken Heart — box capa dura com 3 livros (em inglês)\n• O Nome do Vento — edição de luxo (em português)\n\n🌙 PIJAMA\n• Pijama de manga longa — tamanho GG ou EG\n\n✧ ASSINATURAS DE IA\n• Ajuda para ChatGPT ou Claude — contribuição via Pix no valor que quiser. Pix de qualquer valor — QR Code ou link Nubank no site`;
+    const toast=document.getElementById('toast');let t;
+    function notify(s){toast.textContent=s;toast.classList.add('on');clearTimeout(t);t=setTimeout(()=>toast.classList.remove('on'),2600)}
+    async function copy(s){try {if(navigator.clipboard && window.isSecureContext){await navigator.clipboard.writeText(s)}else{const el=document.createElement('textarea');el.value=s;el.style.position='fixed';el.style.opacity='0';document.body.appendChild(el);el.select();document.execCommand('copy');el.remove()}notify('Copiado! ♡')} catch(e){notify('Não foi possível copiar automaticamente.')}}
+    document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>copy(b.dataset.copy)));
+    document.getElementById('share').addEventListener('click',async()=>{
+      const online=location.protocol==='https:' || location.protocol==='http:';
+      const data={title:'Minha lista de presentes 🎁',text:'Ideias de presentes para aniversário e Natal ♡',...(online?{url:location.href}:{text:plainText})};
+      try{if(navigator.share){await navigator.share(data);return}}catch(e){if(e.name==='AbortError')return}
+      await copy(online?location.href:plainText);
+    });
+  </script>
+</body>
+</html>
